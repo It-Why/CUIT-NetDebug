@@ -11,5 +11,5 @@ public:
     NetDebugClientWnd(QWidget *parent = Q_NULLPTR);
 
 private:
-    Ui::NetDebugClientWndClass ui;
+    Ui::NetDebugClientWnd ui;
 };
