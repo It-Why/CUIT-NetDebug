@@ -10,6 +10,10 @@ class NetDebugClientWnd : public QMainWindow
 public:
     NetDebugClientWnd(QWidget *parent = Q_NULLPTR);
 
+private slots:
+    void OnSendDataBtnClicked();
+    void OnClearBtnClicked();
+
 private:
     Ui::NetDebugClientWnd ui;
 };

@@ -3,6 +3,10 @@
 UdpClient::UdpClient()
 {
     m_iDataBuffer = 1024;
+    if (WSAStartup(MAKEWORD(2, 2), &m_wsaData) != 0)
+    {
+        //Failed to load WinSock
+    }
 }
 
 UdpClient::~UdpClient()
@@ -21,4 +25,5 @@ void UdpClient::SetServerPort(int ServerPort)
 
 void UdpClient::SendMessage(std::string SendBuffer)
 {
+
 }
