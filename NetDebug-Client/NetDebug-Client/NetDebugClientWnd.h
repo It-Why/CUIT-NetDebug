@@ -11,6 +11,7 @@ public:
     NetDebugClientWnd(QWidget *parent = Q_NULLPTR);
 
 private slots:
+    void OnSwitchBtnClicked();
     void OnSendDataBtnClicked();
     void OnClearBtnClicked();
 

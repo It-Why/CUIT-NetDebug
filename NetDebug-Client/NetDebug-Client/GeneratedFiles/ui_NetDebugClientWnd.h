@@ -47,6 +47,7 @@ public:
     QLabel *label_ServerPort;
     QLineEdit *lineEdit_ServerPort;
     QFrame *line_2;
+    QPushButton *pushButton_Switch;
     QSpacerItem *verticalSpacer;
     QVBoxLayout *verticalLayout_2;
     QLabel *label_SendData;
@@ -133,6 +134,11 @@ public:
 
         verticalLayout->addWidget(line_2);
 
+        pushButton_Switch = new QPushButton(centralWidget);
+        pushButton_Switch->setObjectName(QStringLiteral("pushButton_Switch"));
+
+        verticalLayout->addWidget(pushButton_Switch);
+
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         verticalLayout->addItem(verticalSpacer);
@@ -209,6 +215,7 @@ public:
         radioButton_Tcp->setText(QApplication::translate("NetDebugClientWnd", "TCP", Q_NULLPTR));
         label_ServerIP->setText(QApplication::translate("NetDebugClientWnd", "ServerIP:", Q_NULLPTR));
         label_ServerPort->setText(QApplication::translate("NetDebugClientWnd", "ServerPort:", Q_NULLPTR));
+        pushButton_Switch->setText(QApplication::translate("NetDebugClientWnd", "Switch-OFF", Q_NULLPTR));
         label_SendData->setText(QApplication::translate("NetDebugClientWnd", "SendData:", Q_NULLPTR));
         pushButton_SendData->setText(QApplication::translate("NetDebugClientWnd", "SendData", Q_NULLPTR));
         label_ReadData->setText(QApplication::translate("NetDebugClientWnd", "ReadData:", Q_NULLPTR));

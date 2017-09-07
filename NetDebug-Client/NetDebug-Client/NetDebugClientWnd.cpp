@@ -9,6 +9,18 @@ NetDebugClientWnd::NetDebugClientWnd(QWidget *parent)
     connect(ui.pushButton_ClearReadData, SIGNAL(clicked()), this, SLOT(OnClearBtnClicked()));
 }
 
+void NetDebugClientWnd::OnSwitchBtnClicked()
+{
+    if (ui.pushButton_Switch->text() == "Switch-OFF")
+    {
+        ui.pushButton_Switch->setText("Switch-ON");
+    }
+    else if (ui.pushButton_Switch->text() == "Switch-OFF")
+    {
+        ui.pushButton_Switch->setText("Switch-OFF");
+    }
+}
+
 void NetDebugClientWnd::OnSendDataBtnClicked()
 {
 

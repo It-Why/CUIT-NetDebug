@@ -132,6 +132,13 @@
        </widget>
       </item>
       <item>
+       <widget class="QPushButton" name="pushButton_Switch">
+        <property name="text">
+         <string>Switch-OFF</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <spacer name="verticalSpacer">
         <property name="orientation">
          <enum>Qt::Vertical</enum>
