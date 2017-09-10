@@ -1,4 +1,12 @@
+/************************************************************************
+// Visual Studio 2015 C++
+// UDP Server
+// By:IT-Why
+// Date:2017.09.10
+// www.itstep.top
+*************************************************************************/
 #pragma once
+#pragma comment(lib, "ws2_32.lib")
 
 #include <string>
 #include <WinSock2.h>
@@ -8,18 +16,14 @@ class UdpClient
 {
 
 public:
-    UdpClient();
+    UdpClient(int iServerPort, std::string strServerIP);
     ~UdpClient();
 
-    void SetServerIP(std::string ServerIP);
-    void SetServerPort(int ServerPort);
-    void SendMessage(std::string SendBuffer);
-    
+    std::string SendMessage(const std::string strText);
 
 private:
-    std::string m_strServerIP;//服务器IP地址
-    int m_iServerPort;//服务器端口号
-    int m_iDataBuffer;//缓冲区长度
-    WSADATA m_wsaData;
+    SOCKET m_socketUdpClient;//声明SOCKET
+    sockaddr_in m_sin;//声明连接目的地址
+    int m_iAddrLen;//声明地址长度
 };
 

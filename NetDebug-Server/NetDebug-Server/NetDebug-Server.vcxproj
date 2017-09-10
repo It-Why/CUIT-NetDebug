@@ -82,6 +82,7 @@
     </ClCompile>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NetDebugServerWnd.cpp" />
+    <ClCompile Include="UdpServer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="NetDebugServerWnd.h">
@@ -109,6 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_NetDebugServerWnd.h" />
+    <ClInclude Include="UdpServer.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="NetDebugServer.qrc">
