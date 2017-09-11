@@ -65,13 +65,13 @@
     <CustomBuild Include="NetDebugServer.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="UdpServer.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_NetDebugServerWnd.h">
       <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UdpServer.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

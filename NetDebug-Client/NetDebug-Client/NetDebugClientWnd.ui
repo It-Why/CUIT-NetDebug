@@ -134,7 +134,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_Switch">
         <property name="text">
-         <string>Switch-OFF</string>
+         <string>Switch-ON</string>
         </property>
        </widget>
       </item>

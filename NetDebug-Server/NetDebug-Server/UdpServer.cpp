@@ -29,9 +29,24 @@ UdpServer::UdpServer(int iListenPort)
         closesocket(m_socketUdpServer);
         return;
     }
-}
 
+    sockaddr_in remoteAddr;
+    int iAddrLen = sizeof(remoteAddr);
+    while (true)
+    {
+        char recvData[255];
+        int ret = recvfrom(m_socketUdpServer, recvData, 255, 0, (sockaddr *)&remoteAddr, &iAddrLen);
+        if (ret > 0)
+        {
+            recvData[ret] = 0x00;
+
+        }
+    }
+}
 
 UdpServer::~UdpServer()
 {
+    closesocket(m_socketUdpServer);
+    WSACleanup();
 }
+

@@ -1,7 +1,7 @@
 /************************************************************************
-// Visual Studio 2015 C++             
+// Visual Studio 2015 C++
 // UDP Server
-// By:IT-Why 
+// By:IT-Why
 // Date:2017.09.10
 // www.itstep.top
 *************************************************************************/
@@ -9,6 +9,8 @@
 #pragma comment(lib, "ws2_32.lib")
 
 #include <winsock2.h>
+#include <windows.h>
+#include "NetDebugServerWnd.h"
 
 class UdpServer
 {
